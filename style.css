@@ -1,0 +1,79 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    display: inline-flex;
+    color: brown;
+    
+    margin-left: 350px;
+    
+    
+    animation: top;
+    animation-duration: 5s;
+     /* animation-fill-mode: both; */
+    
+    /* animation-iteration-count: infinite; */
+}
+#span {
+    margin-left: 0px;
+    color: brown;
+    animation: imdb;
+    animation-duration: 5s;
+}
+h2:hover {
+    color: rgb(9, 0, 8);
+}
+#marvel {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    
+}
+.studio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width:400px;
+    box-shadow: 5px 5px 5px 5px ;
+    border-radius: 10px;
+    gap: 1rem;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left:15px ;
+    
+    
+}
+.studio:hover {
+    color: rgb(112, 243, 243);
+    background-color: rgba(144, 116, 141, 0.658);
+    transform: scale(1.1);
+    overflow: hidden;
+    
+}
+ /* @keyframes example {
+    from {;}
+to {;}
+}  */
+@keyframes top {
+    from {transform: translateX(-500px);} to {transform: translateY(0px);}
+}
+@keyframes imdb {
+    from {transform: translateX(500px);} to {transform: translateY(0px);}
+}
+@media screen  and (max-width:550px) {
+    body{
+        background-color: azure;
+    }       
+     #marvel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+             }
+}
